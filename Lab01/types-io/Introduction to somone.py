@@ -1,6 +1,0 @@
-age = input("Please enter your age: ")
-name = input("Please enter your name: ")
-address = input("Please enter your address: ")
-print("Your age is",age)
-print("Your name is",name)
-print("Your address is",address)
