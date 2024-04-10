@@ -1,11 +1,13 @@
 def falling(n, k):
     result = 1
-    for i in range(0,k):
+    for i in range(0, k):
         result *= (n - i)
     return result
 
+
 # Example usage:
 print(falling(6, 3))  # Output: 6 * 5 * 4 = 120
+
 
 def falling(n, k):
     result = 1
@@ -15,6 +17,6 @@ def falling(n, k):
         i += 1
     return result
 
+
 # Example usage:
 print(falling(6, 3))  # Output: 6 * 5 * 4 = 120
-

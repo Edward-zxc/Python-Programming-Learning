@@ -1,4 +1,5 @@
 def two_of_three(x, y, z):
+
     """Return a*a + b*b, where a and b are the two smallest members of the
     positive numbers x, y, and z.
 
