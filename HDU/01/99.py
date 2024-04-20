@@ -1,7 +1,8 @@
-y = 4224
-sum = 0
-while y > 0:
-    digit = y % 10
-    sum += digit
-    y = y // 10
-print(sum)
+height = int(input("Enter your height in m: "))
+
+
+for j in range (1,height-1):
+    print("#",end="")
+for k in range (1,height+1):
+    print(" ",end="")
+print()

@@ -9,5 +9,7 @@ def skip_add(n):
     """
     "*** YOUR CODE HERE ***"
     if n > 0:
-        return n * skip_add(n-2)
+        return n * skip_add(n - 2)
+
+
 skip_add(10)
