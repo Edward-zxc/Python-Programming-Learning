@@ -5,7 +5,6 @@ def highest_score(student_scores):
     highest = max(student_scores, key=lambda x: sum(x[1:]))
     return highest[0], sum(highest[1:])
 
-# 示例
 student_scores = [
     ['Jack', 90, 89, 89],
     ['张三', 93, 82, 91],

@@ -4,5 +4,5 @@ def multiply(*args):
         result *= num
     return result
 
-# 示例
-print(multiply(2, 3, 4))  # 输出24
+
+print(multiply(2, 3, 4))
