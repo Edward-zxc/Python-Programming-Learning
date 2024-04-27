@@ -12,10 +12,14 @@ def a_plus_abs_b(a, b):
     >>> a_plus_abs_b(-1, -4)
     3
     """
+    """
+    py ok -q a_plus_abs_b --local
+    py ok -q a_plus_abs_b_syntax_check --local
+    """
     if b < 0:
-        f = a-b
+        f = sub
     else:
-        f = a+b
+        f = add
     return f(a, b)
 
 def a_plus_abs_b_syntax_check():
@@ -42,7 +46,11 @@ def two_of_three(i, j, k):
     >>> two_of_three(5, 5, 5)
     50
     """
-    return i
+    """
+    py ok -q two_of_three --local
+    py ok -q two_of_three --local
+    """
+    return min(i*i+j*j, j*j+k*k,i*i+k*k)
 
 def two_of_three_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.
@@ -64,6 +72,9 @@ def largest_factor(n):
     40
     >>> largest_factor(13) # factor is 1 since 13 is prime
     1
+    """
+    """
+    py ok -q largest_factor --local
     """
     "*** YOUR CODE HERE ***"
 
