@@ -51,6 +51,9 @@ def two_of_three(i, j, k):
     py ok -q two_of_three --local
     """
     return min(i*i+j*j, j*j+k*k,i*i+k*k)
+    '''
+    return two_of_three(i, j, k)
+    '''
 
 def two_of_three_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.
