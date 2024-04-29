@@ -51,9 +51,6 @@ def two_of_three(i, j, k):
     py ok -q two_of_three --local
     """
     return min(i*i+j*j, j*j+k*k,i*i+k*k)
-    '''
-    return two_of_three(i, j, k)
-    '''
 
 def two_of_three_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.
@@ -80,7 +77,11 @@ def largest_factor(n):
     py ok -q largest_factor --local
     """
     "*** YOUR CODE HERE ***"
-
+    i = n -1
+    while n < i :
+        if n % i == 0:
+            return i
+        i -= 1
 
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
