@@ -1,3 +1,10 @@
+"""
+Q1:Control
+py ok -q control -u --local
+### python  because in Python, any non-zero value is considered True.
+Q2:DEBUG
+py ok -q debugging-quiz -u --local
+"""
 def falling(n, k):
     """Compute the falling factorial of n to depth k.
 

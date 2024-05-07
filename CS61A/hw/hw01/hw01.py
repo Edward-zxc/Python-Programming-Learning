@@ -77,11 +77,13 @@ def largest_factor(n):
     py ok -q largest_factor --local
     """
     "*** YOUR CODE HERE ***"
-    i = n -1
-    while n < i :
+    i = 1
+    temp = 0
+    while n > i:
         if n % i == 0:
-            return i
-        i -= 1
+            temp = i
+        i += 1
+    print(temp)
 
 def hailstone(n):
     """Print the hailstone sequence starting at n and return its
@@ -102,5 +104,22 @@ def hailstone(n):
     >>> b
     1
     """
+    """
+    py ok -q hailstone --local
+    """
     "*** YOUR CODE HERE ***"
+    length = 1
+    while n != 1:
+        print(n)
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = n * 3 + 1
+        length += 1
+    print(n)
+    return length
 
+"""
+SCORE:
+py ok --score --local
+"""
