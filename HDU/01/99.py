@@ -1,8 +1,4 @@
-height = int(input("Enter your height in m: "))
 
-
-for j in range (1,height-1):
-    print("#",end="")
-for k in range (1,height+1):
-    print(" ",end="")
-print()
+def func5(a, b, *c):
+   print(a,b)
+func5(1,2,3,4,5,6)
