@@ -18,7 +18,9 @@ def falling(n, k):
     1
     """
     "*** YOUR CODE HERE ***"
-
+    while k > 0:
+        n = n * (k - 1)
+        k -= 1
 
 def divisible_by_k(n, k):
     """
