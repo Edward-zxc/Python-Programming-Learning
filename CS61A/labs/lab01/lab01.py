@@ -17,11 +17,14 @@ def falling(n, k):
     >>> falling(4, 0)
     1
     """
+    '''
+    py ok -q falling --local
+    '''
     "*** YOUR CODE HERE ***"
     while k > 0:
         n = n * (k - 1)
-        k -= 1
-
+        k = k - 1
+    return n
 def divisible_by_k(n, k):
     """
     >>> a = divisible_by_k(10, 2)  # 2, 4, 6, 8, and 10 are divisible by 2
