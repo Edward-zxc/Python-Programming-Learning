@@ -21,10 +21,14 @@ def falling(n, k):
     py ok -q falling --local
     '''
     "*** YOUR CODE HERE ***"
-    while k > 0:
-        n = n * (k - 1)
-        k = k - 1
-    return n
+    if k == 0:
+        return 1
+    else:
+        while k > 0:
+            count = 0
+            n *= (n-1)
+            n -= 1
+
 def divisible_by_k(n, k):
     """
     >>> a = divisible_by_k(10, 2)  # 2, 4, 6, 8, and 10 are divisible by 2
@@ -45,7 +49,18 @@ def divisible_by_k(n, k):
     >>> c
     0
     """
+    '''
+    py ok -q divisible_by_k --local
+    '''
     "*** YOUR CODE HERE ***"
+    if n >= k:
+        tmp = k
+        while tmp <= n:
+            if tmp % k == 0:
+                print(tmp)
+            tmp += 1
+    else:
+        print(0)
 
 
 def sum_digits(y):
