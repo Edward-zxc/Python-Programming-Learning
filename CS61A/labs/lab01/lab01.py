@@ -5,6 +5,8 @@ py ok -q control -u --local
 Q2:DEBUG
 py ok -q debugging-quiz -u --local
 """
+
+
 def falling(n, k):
     """Compute the falling factorial of n to depth k.
 
@@ -24,10 +26,8 @@ def falling(n, k):
     if k == 0:
         return 1
     else:
-        while k > 0:
-            count = 0
-            n *= (n-1)
-            n -= 1
+        return n * falling(n - 1, k - 1)
+
 
 def divisible_by_k(n, k):
     """
@@ -54,13 +54,17 @@ def divisible_by_k(n, k):
     '''
     "*** YOUR CODE HERE ***"
     if n >= k:
+        count = 0
         tmp = k
         while tmp <= n:
             if tmp % k == 0:
                 print(tmp)
+                count += 1
             tmp += 1
+        return count
+
     else:
-        print(0)
+        return 0
 
 
 def sum_digits(y):
@@ -94,5 +98,29 @@ def double_eights(n):
     >>> double_eights(80808080)
     False
     """
+    ''' 
+    py ok -q double_eights --local
+    '''
     "*** YOUR CODE HERE ***"
-
+    def count8(temp):
+        count1 = 0
+        while temp >= 8:
+            if temp % 10 == 8:
+                count1 += 1
+            temp //= 10
+        return count1
+    countForReal = count8(n)
+    '''
+    判断有几个数字8，以及有无数字8
+    '''
+    if n > 10 and countForReal >= 2:
+        while n >= 8:
+            if n % 10 == 8:
+                n //= 10
+                if n % 10 == 8:
+                    return True
+                else:
+                    return False
+            n //= 10
+    else:
+        return False
