@@ -124,3 +124,11 @@ def double_eights(n):
             n //= 10
     else:
         return False
+
+# Alternate solution
+def double_eights_alt(n):
+    while n:
+        if n % 10 == 8 and n // 10 % 10 == 8:
+            return True
+        n //= 10
+    return False
