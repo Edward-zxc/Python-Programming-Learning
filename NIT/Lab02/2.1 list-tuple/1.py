@@ -5,7 +5,7 @@ reversed_list1 = list_a[::-1]
 print(reversed_list1)
 
 # 方法二：使用reverse()方法
-list_a.reverse()
+
 print(list_a)
 
 # 方法三：Bubble sort
