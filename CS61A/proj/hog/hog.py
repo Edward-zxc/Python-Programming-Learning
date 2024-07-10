@@ -31,10 +31,11 @@ def roll_dice(num_rolls, dice=six_sided):
     "*** YOUR CODE HERE ***"
     total = 0
     while num_rolls > 0:
-        if dice() == 1:
+        result = dice()
+        if result == 1:
             return 1
         else:
-            total += dice()
+            total += result
             num_rolls -= 1
     return total
     # END PROBLEM 1
@@ -92,6 +93,9 @@ def num_factors(n):
     """Return the number of factors of N, including 1 and N itself."""
     # BEGIN PROBLEM 4
     "*** YOUR CODE HERE ***"
+    for i in (1,n):
+        if i % 2 == 0:
+            print()
     # END PROBLEM 4
 
 def sus_points(score):

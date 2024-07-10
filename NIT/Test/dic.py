@@ -7,8 +7,8 @@ fruits = {
 
 # 输出所有元素
 print("水果数据：")
-for fruit, quantity in fruits.items():
-    print(f"{fruit}: {quantity}斤")
+for i, j in fruits.items():
+    print(f"{i}: {j}斤")
 
 prices = {
     "苹果": 4.5,
@@ -18,7 +18,5 @@ prices = {
 }
 
 print("\n水果价格：")
-for fruit, quantity in fruits.items():
-    price_per_kg = prices[fruit]
-    total_price = price_per_kg * quantity
-    print(f"{fruit}: {total_price:.2f}元")
+for i , j in fruits.items():
+    i
