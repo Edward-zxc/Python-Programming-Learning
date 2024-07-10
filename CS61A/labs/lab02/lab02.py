@@ -16,6 +16,7 @@ def composite_identity(f, g):
     "*** YOUR CODE HERE ***"
 
 
+
 def sum_digits(y):
     """Return the sum of the digits of non-negative integer y."""
     total = 0
@@ -71,9 +72,13 @@ def multiple(a, b):
     42
     """
     "*** YOUR CODE HERE ***"
-
-
-
+    i ,result = 1 , 0
+    while i < a and i < b:
+        if a % i == 0 and b % i == 0 :
+            result = i
+        else:
+            i += 1
+    return result * i
 def cycle(f1, f2, f3):
     """Returns a function that is itself a higher-order function.
 
